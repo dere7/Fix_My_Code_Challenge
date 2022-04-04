@@ -2,8 +2,8 @@
 """Contains a Sqaure"""
 
 
-class Square():
-    """It is Rectangle not Square. :)"""
+class Rectangle():
+    """ Now it is Rectangle. :)"""
     width = 0
     height = 0
 
@@ -11,12 +11,12 @@ class Square():
         for key, value in kwargs.items():
             setattr(self, key, value)
 
-    def area_of_my_square(self):
-        """ Area of the Square """
+    def area_of_my_Rectangle(self):
+        """ Area of the Rectangle """
         return self.width * self.height
 
-    def permiter_of_my_square(self):
-        """ Perimeter of the Square"""
+    def permiter_of_my_Rectangle(self):
+        """ Perimeter of the Rectangle"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
@@ -24,7 +24,7 @@ class Square():
 
 
 if __name__ == "__main__":
-    s = Square(width=12, height=9)
+    s = Rectangle(width=12, height=9)
     print(s)
-    print(s.area_of_my_square())
-    print(s.permiter_of_my_square())
+    print(s.area_of_my_Rectangle())
+    print(s.permiter_of_my_Rectangle())
